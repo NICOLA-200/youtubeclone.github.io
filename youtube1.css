@@ -1,0 +1,517 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family:  'Roboto', sans-serif;
+
+
+}
+
+::-webkit-scrollbar {
+     width: 8px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+     background: none;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+     background: transparent;
+     border-radius: 5px;
+ }
+ 
+ .sidebar:hover::-webkit-scrollbar-thumb {
+     background: #717171;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background: #888;
+ }
+
+h1{
+font-size: 1.5rem;
+}
+
+h4 {
+font-size: .9em;
+text-transform: uppercase;
+color: #aaa;
+margin-left: 20px;
+
+}
+i {
+font-size: 1.5rem;
+color: white;
+}
+
+p,a {
+font-size: .9rem;
+}
+
+hr{
+border: 1px solid rgba(red, green, blue, 0.1);
+margin: 12px 0;
+}
+
+.header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #202020;
+display: flex;
+justify-content: space-between;
+padding: 15px 25px; 
+padding-right: 40px;
+}
+
+.logo-img {
+position: relative;
+height: 25px;
+width: 25px;
+
+}
+
+img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+#textyoutube {
+letter-spacing: -2px;
+color: #fff;
+}
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo-container {
+display: flex;
+align-items: center;
+
+
+
+}
+.logo-container {
+display: flex;
+align-items: center;
+
+}
+.seach-container {
+display: flex;
+align-items: center;
+flex: 0 1 685px;
+margin-left: 40px;
+text-decoration: none;
+}
+
+.seach-container form{
+position: relative;
+width:100%;
+border-top-left-radius:  60px;
+border-bottom-left-radius: 60px;
+overflow: hidden;
+border-bottom: #121212;
+}
+.seach-container input{
+height: 40px;
+display: flex;
+align-items: center;
+width: 100%;
+background-color: #121212;
+padding: 12px;
+color: #fff;
+font-size: 1rem;
+
+}
+.search {
+
+min-width: 60px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 20;
+background-color: #313131;
+outline: none;
+border: none;
+border-top-right-radius:  60px;
+border-bottom-right-radius: 60px;
+}
+
+.search:hover {
+     cursor: pointer;
+}
+.mic {
+height: 40px;
+min-width: 40px;
+
+border-radius:50%;
+outline: none;
+margin-left: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #181818;
+border: none;
+}
+.profile-box {
+position: relative;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+overflow: hidden;
+margin-left: 25px ;
+
+
+}
+
+.profile-container {
+display:flex ;
+align-items: center;
+
+}
+
+.profile-container i {
+margin-left: 25px ;
+
+
+}
+/*start of body */
+
+.body-container {
+     display: flex;
+     position: fixed;
+     height: calc( 100vh - 60px);
+     top: 60px;
+ }
+ 
+ 
+ /* sidebar stars here */
+ 
+ .sidebar {
+     padding-top: 10px;
+     width: 240px;
+     background-color: #212121;
+     overflow-y: scroll;
+     color: #fff;
+ }
+ 
+ .sidebar-items {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .sidebar-item {
+     display: flex;
+     align-items: center;
+     padding: 0 24px;
+     cursor: pointer;
+     height: 40px;
+ }
+ 
+ .sidebar-item:hover {
+     background-color: #4C4C4C;
+ }
+ 
+ .sidebar-item i {
+     margin-right: 24px;
+ }
+ 
+ 
+ /* main content starts here */
+ 
+ .content {
+     width: calc(100vw - 240px);
+ }
+ 
+ .chips-wrapper {
+     overflow-x: scroll;
+     background-color: #181818;
+     display: flex;
+     padding-left: 14px;
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ 
+ .chips-wrapper::-webkit-scrollbar {
+     height: 0;
+ }
+ 
+ .chip {
+     margin: 12px 6px;
+     background-color: #373737;
+     padding: 6px 12px;
+     border: 1px solid rgba(255, 255, 255, 0.1);
+     border-radius: 16px;
+     white-space: nowrap;
+     cursor: pointer;
+     color: #fff;
+     transition: .5s;
+ }
+ 
+ .chip:hover {
+     background-color: #4D4D4D;
+ }
+
+.video-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 18px;
+     padding: 20px 25px;
+     background-color: #181818;
+     overflow-y: scroll;
+     height: calc(100vh - 116px);
+     
+ }
+ 
+ .video-content-cover {
+     position: relative;
+     transition: .2s;
+     
+     
+     
+ }
+ 
+ .video-content {
+     margin-bottom: 25px;
+     position: relative;
+     transition: .2s;
+     
+    width: 100%; 
+     
+ }
+
+ .image {
+     display: block;
+
+ }
+
+ .video {
+     display: none;
+ }
+ .video-content:hover .video {
+     transition-delay: 1s;
+     display: block;
+ }
+ .video-content:hover .image {
+   transition-delay: 1s;
+     display: none;
+ }
+ 
+ .video-content:hover {
+     transition-delay: 1s;
+     
+     transform: scale(1.5);
+     z-index: 222;
+     position: absolute;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+     background-color: #202020;
+     
+ }
+ 
+ .video-content-cover:hover {
+     transform: translateY(60px);
+     z-index: 999;
+     transition-delay: 1s;
+ }
+
+ .video-content-cover:hover {
+     transform: translateY(60px);
+     z-index: 999;
+     transition-delay: 1s;
+ } 
+ 
+ .video-content-cover:nth-child(4n+1):hover {
+     transform: translate(50px, 60px);
+     z-index: 999;
+ }
+ 
+ .video-content-cover:nth-child(4n+4):hover {
+     transform: translate(-30px, 60px);
+     z-index: 999;
+ }
+ 
+ .video-content:hover .video-details {
+     background-color: #202020;
+     padding: 10px;
+ }
+ 
+ .video-box {
+     position: relative;
+     width: auto;
+     height: 145px;
+     display: block;
+     
+     
+ }
+ 
+ .video-details {
+     display: flex;
+     color: #fff;
+     padding-top: 12px;
+ }
+ 
+ .video-content:hover .channel-logo {
+     min-width: 25px;
+     height: 25px;
+ }
+ 
+ .channel-logo {
+     position: relative;
+     min-width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     overflow: hidden;
+ }
+ 
+ .detail {
+     margin-left: 12px;
+ }
+ 
+ .video-content:hover .title {
+     font-size: .7rem;
+ }
+ 
+ .title {
+     font-size: .9rem;
+ }
+ 
+ .video-content:hover .channel-name {
+     font-size: .6rem;
+ }
+ 
+ .channel-name {
+     font-size: .8rem;
+     margin-top: 10px;
+     color: #aaa;
+ }
+ 
+ .video-content:hover .views-upload {
+     font-size: .6rem;
+ }
+ 
+ .views-upload {
+     display: flex;
+     font-size: .8rem;
+     color: #aaa;
+ }
+ 
+ .btn {
+     padding: 5px 0;
+     color: #aaa;
+     text-transform: uppercase;
+     width: 100%;
+     background-color: #373737;
+     text-align: center;
+     margin: 5px 0;
+     font-size: .6rem;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .btn i {
+     font-size: .7rem;
+     margin-right: 5px;
+     color: #aaa;
+ }
+ 
+ .hidden-content {
+     display: none;
+     padding: 5px 10px;
+     background-color: #202020;
+ }
+ 
+ .video-content:hover .hidden-content {
+     display: block;
+ }
+ 
+ 
+
+ @media (max-width:1200px) {
+     .sidebar {
+         width: 70px;
+         overflow-x: hidden;
+     }
+     .content {
+         width: calc(100vw - 70px);
+     }
+     .more {
+         display: none;
+     }
+ }
+ 
+ @media (max-width:1050px) {
+     .video-container {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
+ 
+ @media (max-width:680px) {
+     .video-container {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+ 
+ @media (max-width:480px) {
+     .video-container {
+         grid-template-columns: 1fr;
+     }
+     .search-container,
+     .ri-grid-fill {
+         display: none;
+     }
+     .video-container {
+         grid-gap: 10px;
+         padding: 10px 10px;
+     }
+     .header {
+         padding-right: 10px;
+     }
+     .video-content:hover {
+         transform: none;
+         position: relative;
+         box-shadow: none;
+         background-color: #181818;
+     }
+     .video-content-cover:hover {
+         transform: none;
+     }
+     .video-content-cover:nth-child(4n+1):hover {
+         transform: none;
+     }
+     .video-content-cover:nth-child(4n+4):hover {
+         transform: none;
+     }
+     .video-content:hover .video-details {
+         background-color: #181818;
+         padding: 0px;
+         padding-top: 12px;
+     }
+     .video-content:hover .channel-logo {
+         min-width: 35px;
+         height: 35px;
+     }
+     .video-content:hover .title {
+         font-size: .9rem;
+     }
+     .video-content:hover .channel-name {
+         font-size: .8rem;
+     }
+     .video-content:hover .views-upload {
+         font-size: .8rem;
+     }
+     .video-content:hover .hidden-content {
+         display: none;
+     }
+ }
